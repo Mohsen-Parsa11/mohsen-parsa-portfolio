@@ -1,23 +1,13 @@
+set -e
+
 echo ""
 echo "🔍 Running ESLint..."
-pnpm lint
-
-if [ $? -ne 0 ]; then
-  echo "❌ ESLint failed. Commit aborted."
-  exit 1
-fi
-
+pnpm exec eslint .
 echo "✅ ESLint passed!"
 
 echo ""
 echo "🔍 Checking TypeScript..."
-pnpm type-check
-
-if [ $? -ne 0 ]; then
-  echo "❌ TypeScript check failed. Commit aborted."
-  exit 1
-fi
-
+pnpm exec tsc --noEmit
 echo "✅ TypeScript passed!"
 
 echo ""
