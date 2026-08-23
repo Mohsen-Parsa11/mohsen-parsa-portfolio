@@ -1,2 +1,24 @@
+echo ""
+echo "🔍 Running ESLint..."
 pnpm lint
+
+if [ $? -ne 0 ]; then
+  echo "❌ ESLint failed. Commit aborted."
+  exit 1
+fi
+
+echo "✅ ESLint passed!"
+
+echo ""
+echo "🔍 Checking TypeScript..."
 pnpm type-check
+
+if [ $? -ne 0 ]; then
+  echo "❌ TypeScript check failed. Commit aborted."
+  exit 1
+fi
+
+echo "✅ TypeScript passed!"
+
+echo ""
+echo "🎉 All checks passed! Creating commit..."
