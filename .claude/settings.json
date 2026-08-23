@@ -1,0 +1,22 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://localhost:20128",
+    "ANTHROPIC_AUTH_TOKEN": "omniroute",
+    "ANTHROPIC_MODEL": "auto/best-coding",
+    "ANTHROPIC_SMALL_FAST_MODEL": "auto/best-coding",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "auto/best-coding",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "auto/best-coding",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "auto/best-coding",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "effortLevel": "low",
+  "statusLine": {
+    "type": "command",
+    "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\Mihan Computer\\.claude\\plugins\\cache\\caveman\\caveman\\0d95a81d35a9\\src\\hooks\\caveman-statusline.ps1\""
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)"
+    ]
+  }
+}
