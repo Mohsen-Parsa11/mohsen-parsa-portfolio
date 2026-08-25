@@ -44,6 +44,7 @@ export function Experience() {
         href="#contact"
         size="default"
         className="mx-auto mt-8.75 block max-w-fit"
+        rollText="Get CV"
       >
         Download My CV <ArrowRight size={18} />
       </Button>

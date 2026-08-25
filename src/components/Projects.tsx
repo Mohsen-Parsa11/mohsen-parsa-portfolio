@@ -42,10 +42,10 @@ export function Projects() {
                 {project.text}
               </p>
               <div className="flex items-center gap-4 mt-6">
-                <Button variant="outline" href="#contact" size="default">
+                <Button variant="outline" href="#contact" size="default" rollText="View code">
                   Source Code
                 </Button>
-                <Button href="#contact" size="default">
+                <Button href="#contact" size="default" rollText="Open site">
                   Live Website <ArrowRight size={16} />
                 </Button>
               </div>

@@ -23,7 +23,7 @@ export function Contact() {
           Let&apos;s bring your ideas to life with
           thoughtful design and code
         </p>
-        <Button href="mailto:hello@snilloc.dev" size="default" className="mt-6">
+        <Button href="mailto:hello@snilloc.dev" size="default" className="mt-6" rollText="Send email">
           Contact Me <ArrowRight size={18} />
         </Button>
       </div>

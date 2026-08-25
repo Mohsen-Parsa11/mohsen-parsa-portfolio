@@ -28,10 +28,10 @@ export function Hero() {
             JavaScript frameworks and clean, scalable interfaces.
           </p>
           <div className="flex items-center gap-4 mt-5.5">
-            <Button variant="outline" href="#projects">
+            <Button variant="outline" href="#projects" rollText="View projects">
               See my works
             </Button>
-            <Button href="mailto:hello@snilloc.dev">
+            <Button href="mailto:hello@snilloc.dev" rollText="Let's talk">
               Contact Me <ArrowRight size={18} />
             </Button>
           </div>

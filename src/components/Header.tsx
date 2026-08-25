@@ -18,25 +18,46 @@ export function Header() {
           <span>Snilloc Hemingson</span>
         </Link>
         <nav className="flex items-center gap-7 text-[15px]">
-          <Link href="#skills" className="transition-colors hover:text-white">
-            Skills
+          <Link href="#skills" className="group relative block h-6 overflow-hidden">
+            <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              Skills
+            </span>
+            <span className="absolute left-0 top-full block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              Skills
+            </span>
           </Link>
-          <Link href="#projects" className="transition-colors hover:text-white">
-            Projects
+          <Link href="#projects" className="group relative block h-6 overflow-hidden">
+            <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              Projects
+            </span>
+            <span className="absolute left-0 top-full block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              Projects
+            </span>
           </Link>
-          <Link href="#experience" className="transition-colors hover:text-white">
-            Experience
+          <Link href="#experience" className="group relative block h-6 overflow-hidden">
+            <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              Experience
+            </span>
+            <span className="absolute left-0 top-full block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              Experience
+            </span>
           </Link>
           <Link
             href="#testimonials"
-            className="transition-colors hover:text-white hover:translate-y-2"
+            className="group relative block h-6 overflow-hidden"
           >
-            Testimonials
+            <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              Testimonials
+            </span>
+            <span className="absolute left-0 top-full block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+              Testimonials
+            </span>
           </Link>
           <Button
             href="mailto:hello@snilloc.dev"
             size="default"
             variant="default"
+            rollText="Get in touch"
           >
             Contact Me <ArrowRight size={18} />
           </Button>
