@@ -1,0 +1,14 @@
+set -e
+
+echo ""
+echo "🔍 Running ESLint..."
+pnpm exec eslint .
+echo "✅ ESLint passed!"
+
+echo ""
+echo "🔍 Checking TypeScript..."
+pnpm exec tsc --noEmit
+echo "✅ TypeScript passed!"
+
+echo ""
+echo "🎉 All checks passed! Creating commit..."
