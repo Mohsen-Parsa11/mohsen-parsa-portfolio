@@ -32,6 +32,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement>, VariantPr
   asChild?: boolean;
   href?: string;
   children: React.ReactNode;
+  rollText?: string;
 }
 
 function Button({
@@ -41,8 +42,23 @@ function Button({
   asChild = false,
   href,
   children,
+  rollText,
 }: ButtonProps) {
   const classNames = cn(buttonVariants({ variant, size, className }));
+
+  const renderContent = () => {
+    if (rollText) {
+      return (
+        <span className="roll-text-wrapper">
+          <span className="roll-text">
+            <span>{children}</span>
+            <span>{rollText}</span>
+          </span>
+        </span>
+      );
+    }
+    return children;
+  };
 
   if (asChild) {
     return (
@@ -50,7 +66,7 @@ function Button({
         data-slot="button"
         className={classNames}
       >
-        {children}
+        {renderContent()}
       </ButtonPrimitive>
     );
   }
@@ -58,7 +74,7 @@ function Button({
   if (href) {
     return (
       <Link href={href} className={classNames}>
-        {children}
+        {renderContent()}
       </Link>
     );
   }
@@ -68,7 +84,7 @@ function Button({
       data-slot="button"
       className={classNames}
     >
-      {children}
+      {renderContent()}
     </ButtonPrimitive>
   );
 }

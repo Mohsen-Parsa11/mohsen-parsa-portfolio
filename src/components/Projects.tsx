@@ -9,7 +9,8 @@ import { projects } from "@/data/data";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-37.5 max-w-300 mx-auto px-6">
+    <section id="projects" className="py-37.5">
+      <div className="container">
       <SectionHeading
         id="projects-heading"
         tag="Projects"
@@ -41,16 +42,17 @@ export function Projects() {
                 {project.text}
               </p>
               <div className="flex items-center gap-4 mt-6">
-                <Button variant="outline" href="#contact" size="default">
+                <Button variant="outline" href="#contact" size="default" rollText="View code">
                   Source Code
                 </Button>
-                <Button href="#contact" size="default">
+                <Button href="#contact" size="default" rollText="Open site">
                   Live Website <ArrowRight size={16} />
                 </Button>
               </div>
             </div>
           </motion.article>
         ))}
+      </div>
       </div>
     </section>
   );
