@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 pb-37.5 max-w-300 mx-auto px-6">
+    <section id="contact" className="py-20 pb-37.5">
+      <div className="container">
       <div
         className="min-h-75 rounded-[20px] flex flex-col items-center justify-center text-center relative"
         style={{
@@ -25,6 +26,7 @@ export function Contact() {
         <Button href="mailto:hello@snilloc.dev" size="default" className="mt-6">
           Contact Me <ArrowRight size={18} />
         </Button>
+      </div>
       </div>
     </section>
   );

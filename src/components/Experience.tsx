@@ -7,7 +7,8 @@ import { jobs } from "@/data/data";
 
 export function Experience() {
   return (
-    <section id="experience" className="py-37.5 max-w-210 mx-auto px-6">
+    <section id="experience" className="py-37.5">
+      <div className="container">
       <SectionHeading
         id="experience-heading"
         tag="Experience"
@@ -46,6 +47,7 @@ export function Experience() {
       >
         Download My CV <ArrowRight size={18} />
       </Button>
+      </div>
     </section>
   );
 }

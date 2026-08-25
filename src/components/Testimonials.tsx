@@ -13,7 +13,7 @@ export function Testimonials() {
       id="testimonials"
       className="bg-[#171717] py-30 overflow-hidden"
     >
-      <div className="max-w-300 mx-auto px-6">
+      <div className="container">
         <SectionHeading
           id="testimonials-heading"
           tag="Testimonials"

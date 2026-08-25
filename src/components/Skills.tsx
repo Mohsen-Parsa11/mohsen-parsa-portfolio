@@ -6,7 +6,7 @@ import { SectionHeading } from "./SectionHeading";
 export function Skills() {
   return (
     <section className="bg-[#171717] py-30">
-      <div className="max-w-300 mx-auto px-6">
+      <div className="container">
         <SectionHeading id="skills" tag="Tech stack" title="Tools I Build With">
           A curated set of technologies I rely on to build modern web
           experiences
