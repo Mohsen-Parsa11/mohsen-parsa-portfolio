@@ -9,19 +9,19 @@ export const projects = [
     title: "Matcha Haven",
     text:
       "A clean, calming website for a matcha brand, designed to showcase products, tell the brand story, and create a smooth shopping experience.",
-    image: "/mohsen.png",
+    image: "/change-makers.jpg",
   },
   {
     title: "Finova",
     text:
       "A sleek fintech platform designed to simplify payments, track expenses, and give users clear insights into their financial activity.",
-    image: "/mohsen.png",
+    image: "/hassleFree.png",
   },
   {
     title: "Eventra",
     text:
       "A modern event discovery platform that helps users find, explore, buy tickets, and stay updated on events happening around them.",
-    image: "/mohsen.png",
+    image: "/change-makers.jpg",
   },
 ];
 
