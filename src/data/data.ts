@@ -9,19 +9,19 @@ export const projects = [
     title: "Matcha Haven",
     text:
       "A clean, calming website for a matcha brand, designed to showcase products, tell the brand story, and create a smooth shopping experience.",
-    image: "/mohsen.jpg",
+    image: "/mohsen.png",
   },
   {
     title: "Finova",
     text:
       "A sleek fintech platform designed to simplify payments, track expenses, and give users clear insights into their financial activity.",
-    image: "/mohsen.jpg",
+    image: "/mohsen.png",
   },
   {
     title: "Eventra",
     text:
       "A modern event discovery platform that helps users find, explore, buy tickets, and stay updated on events happening around them.",
-    image: "/mohsen.jpg",
+    image: "/mohsen.png",
   },
 ];
 
@@ -103,5 +103,53 @@ export const jobs = [
     company: "Google",
     date: "2020 — 2021",
     bullets: [],
+  },
+];
+
+export const logos = [
+  {
+    id: 1,
+    title: "HTML",
+    src: "/logos/html.svg",
+  },
+  {
+    id: 2,
+    title: "CSS",
+    src: "/logos/css.svg",
+  },
+  {
+    id: 3,
+    title: "Tailwind CSS",
+    src: "/logos/tailwind.svg",
+  },
+  {
+    id: 4,
+    title: "JavaScript",
+    src: "/logos/javascript.svg",
+  },
+  {
+    id: 5,
+    title: "React",
+    src: "/logos/react.svg",
+  },
+  {
+    id: 6,
+    title: "Next.js",
+    src: "/logos/nextjs.svg",
+  },
+  {
+    id: 7,
+    title: "TypeScript",
+    src: "/logos/typescript.svg",
+  },
+  {
+    id: 8,
+    title: "Redux",
+    src: "/logos/redux.svg",
+  },
+  {
+    id: 9,
+    title: "Git",
+    src: "/logos/git.svg",
   },
 ];
