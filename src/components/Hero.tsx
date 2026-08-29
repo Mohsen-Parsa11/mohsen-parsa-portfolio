@@ -19,7 +19,7 @@ export function Hero() {
 
   return (
     <section id="top">
-      <div className="min-h-[auto] lg:min-h-183 items-center container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 py-10 lg:py-0">
+      <div className="min-h-auto lg:min-h-183 items-center container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 py-10 lg:py-0">
         <div className="max-w-full lg:max-w-132.5">
           <motion.span
             className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-[#171717] text-[#9b9b9b] tracking-wider text-sm font-bold"
@@ -137,9 +137,9 @@ export function Hero() {
         </div>
 
         <motion.div
-          className="relative h-64 sm:h-80 lg:h-125 rounded-[20px] bg-[#181818] overflow-hidden flex items-end justify-center"
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
+          className="relative h-64 sm:h-80 mb-10 lg:mb-0 lg:h-125 rounded-[20px] bg-[#181818] overflow-hidden flex items-end justify-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
         >
           <Image

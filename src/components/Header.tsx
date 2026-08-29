@@ -66,11 +66,11 @@ export function Header() {
           </span>
         </Link>
         <Button
-          href="mailto:hello@snilloc.dev"
           size="default"
           variant="default"
           rollText="Contact Me"
           className="flex!"
+          href="#contact"
         >
           <span>Contact Me</span>
           <ArrowRight className="size-5" />
@@ -115,9 +115,9 @@ export function Header() {
             Testimonials
           </Link>
           <Link
-            href="mailto:hello@snilloc.dev"
+            href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-[#f5f5f5] text-[#111111] text-[13px] font-bold hover:bg-[#e5e5e5] transition-colors"
+            className="flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-[#f5f5f5] text-[#111111]! text-[13px] font-bold hover:bg-[#e5e5e5] transition-colors"
           >
             Contact Me
             <ArrowRight className="size-5" />
