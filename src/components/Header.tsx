@@ -9,7 +9,7 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-8 z-50 bg-[#111111]/80 backdrop-blur-md border border-[#232323] h-18 rounded-full container flex items-center justify-between">
+    <header className="sticky top-5 z-50 bg-[#111111]/80 backdrop-blur-md border border-[#232323] h-18 rounded-full container flex items-center justify-between mx-4">
       <Link
         href="#top"
         className="flex items-center gap-3 text-[18px] font-medium"

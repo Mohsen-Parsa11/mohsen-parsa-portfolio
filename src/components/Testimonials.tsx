@@ -11,7 +11,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="bg-[#171717] py-30 overflow-hidden"
+      className="py-30 overflow-hidden"
     >
       <div className="container">
         <SectionHeading

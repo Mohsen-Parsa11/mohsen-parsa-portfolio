@@ -25,21 +25,6 @@ export const projects = [
   },
 ];
 
-export const skills = [
-  "HTML5",
-  "CSS3",
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Redux",
-  "Tailwind CSS",
-  "Sass",
-  "GSAP",
-  "TypeScript",
-  "Netlify",
-  "Git",
-];
-
 export const iconColors = [
   "bg-[#2a9bd7] text-white",
   "bg-[#f6df14]",
