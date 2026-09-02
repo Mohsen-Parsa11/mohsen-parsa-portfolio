@@ -22,9 +22,8 @@ export function Projects() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-12.5">
           {projects.map((project) => (
             <motion.article
-              className="bg-[#151515] border border-[#1f1f1f] rounded-2xl overflow-hidden"
+              className="bg-[#181818] border border-[#1f1f1f] rounded-xl p-2 overflow-hidden"
               key={project.title}
-              whileHover={{ y: -5 }}
             >
               <Image
                 width={500}
@@ -32,9 +31,9 @@ export function Projects() {
                 src={project.image}
                 alt={`${project.title} project preview`}
                 loading="lazy"
-                className="w-full h-75 object-cover brightness-80"
+                className="w-full h-75 object-cover rounded-xl brightness-80"
               />
-              <div className="p-7.5">
+              <div className="p-7.5 bg-[#141414] rounded-xl mt-3">
                 <h3 className="font-light tracking-tighter text-[27px]">
                   {project.title}
                 </h3>
