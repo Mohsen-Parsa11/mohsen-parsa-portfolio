@@ -92,8 +92,8 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.0 }}
           >
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-gradient-to-r from-[#111] to-transparent" />
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-gradient-to-l from-[#111] to-transparent" />
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-linear-to-r from-[#111] to-transparent" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-linear-to-l from-[#111] to-transparent" />
             <Swiper
               modules={[Autoplay, FreeMode]}
               loop
@@ -118,7 +118,7 @@ export function Hero() {
               {duplicatedLogos.map((icon, i) => (
                 <SwiperSlide
                   key={`${icon.id}-${i}`}
-                  className="!w-auto"
+                  className="w-auto!"
                 >
                   <span className="grid place-items-center size-16 lg:size-20 shrink-0 rounded-xl bg-[#151515] text-[28px] font-extrabold">
                     <Image
