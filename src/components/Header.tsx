@@ -14,7 +14,7 @@ export function Header() {
         href="#top"
         className="flex items-center gap-3 text-[18px] font-medium"
       >
-        <span className="w-9.5 h-9.5 rounded-full flex items-center justify-center bg-linear-to-br from-[#9d7042] to-[#2c2925] text-white font-bold text-[15px]">
+        <span className="w-9.5 h-9.5 rounded-full flex items-center justify-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[15px]">
           M
         </span>
         <span>Mohsen Parsa</span>
