@@ -16,7 +16,8 @@ export function SectionHeading({
       <motion.span
         className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#141414] text-[#b5b5b5] uppercase tracking-wider text-[10px] font-bold"
         initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.6 }}
       >
         {tag}
@@ -26,7 +27,8 @@ export function SectionHeading({
           <motion.span
             key={i}
             initial={{ opacity: 0, x: -10, filter: "blur(8px)" }}
-            animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.15,
               delay: 0.3 + i * 0.03,
@@ -40,7 +42,8 @@ export function SectionHeading({
       <motion.p
         className="text-[#858585] text-[17px] font-semibold leading-[1.55]"
         initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.6 }}
       >
         {children}
