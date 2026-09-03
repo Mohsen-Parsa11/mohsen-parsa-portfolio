@@ -5,6 +5,7 @@ import { SectionHeading } from "./SectionHeading";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { jobs } from "@/data/data";
 
 export function Experience() {
@@ -24,11 +25,13 @@ export function Experience() {
           {jobs.map((job, i) => {
             const isOpen = openIndex === i;
             return (
-              <div
+              <motion.div
                 key={job.company}
-                className={`rounded-2xl transition-colors duration-300 ${
-                  isOpen ? "bg-[#1e1e1e]" : "bg-[#151515]"
-                }`}
+                animate={{
+                  backgroundColor: isOpen ? "#1e1e1e" : "#151515",
+                }}
+                transition={{ duration: 0.5 }}
+                className="rounded-2xl"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
@@ -39,37 +42,51 @@ export function Experience() {
                   </span>
                   <b className="text-[#777] text-[16px]">{job.date}</b>
                 </button>
-                <div
-                  className="grid transition-[grid-template-rows] duration-300 ease-in-out"
-                  style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
-                >
-                  <div className="overflow-hidden px-5">
-                    {job.bullets.length > 0 && (
-                      <ul className="text-[#999] pl-5.75 pt-6 font-semibold space-y-2.5 list-disc">
-                        {job.bullets.map((b) => (
-                          <li key={b}>{b}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                </div>
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      key="content"
+                      initial={{ height: 0, opacity: 0, filter: "blur(8px)" }}
+                      animate={{
+                        height: "auto",
+                        opacity: 1,
+                        filter: "blur(0px)",
+                      }}
+                      exit={{ height: 0, opacity: 0, filter: "blur(8px)" }}
+                      transition={{
+                        height: { duration: 0.5, ease: "easeInOut" },
+                        opacity: { duration: 0.5, ease: "easeInOut" },
+                        filter: { duration: 0.5, ease: "easeInOut" },
+                      }}
+                      className="overflow-hidden px-5"
+                    >
+                      {job.bullets.length > 0 && (
+                        <ul className="text-[#999] pl-5.75 px-5 pt-6 pb-2 font-semibold space-y-2.5 list-disc">
+                          {job.bullets.map((b) => (
+                            <li key={b}>{b}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
                 <div className="px-5.75 pb-5.75">
-                  <button
+                  <motion.button
                     onClick={() => setOpenIndex(isOpen ? null : i)}
-                    className={`grid mt-5 p-0.5 cursor-pointer rotate-90 place-items-center rounded-full border-2 border-white transition-transform duration-300 ${
-                      isOpen ? "rotate-270" : ""
-                    }`}
+                    animate={{ rotate: isOpen ? 270 : 90 }}
+                    transition={{ duration: 0.3 }}
+                    className="grid mt-5 p-0.5 cursor-pointer place-items-center rounded-full border-2 border-white"
                   >
                     <Image
                       src="/arrow.svg"
                       alt="toggle"
-                      width={18}
-                      height={18}
+                      width={16}
+                      height={16}
                       className="brightness-0 invert"
                     />
-                  </button>
+                  </motion.button>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
