@@ -21,43 +21,77 @@ export function Footer() {
             </p>
             <div className="flex gap-2.5 mt-5.5">
               <Link
-                href="#contact"
+                href="https://github.com/Mohsen-Parsa11"
+                target="_blank"
                 aria-label="Github"
-                className="w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium"
+                className="group relative w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium overflow-hidden"
               >
-                <Image
-                  src="/github.svg"
-                  alt="github"
-                  width={50}
-                  height={50}
-                  className="size-5 object-cover"
-                />
+                <div className="transition-transform duration-300 ease-out group-hover:-translate-y-25">
+                  <Image
+                    src="/github.svg"
+                    alt="github"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">
+                  <Image
+                    src="/github.svg"
+                    alt="github"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
               </Link>
               <Link
                 href="#contact"
                 aria-label="Twitter"
-                className="w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium"
+                className="group relative w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium overflow-hidden"
               >
-                <Image
-                  src="/twitter.svg"
-                  alt="github"
-                  width={50}
-                  height={50}
-                  className="size-5 object-cover"
-                />
+                <div className="transition-transform duration-300 ease-out group-hover:-translate-y-25">
+                  <Image
+                    src="/twitter.svg"
+                    alt="twitter"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">
+                  <Image
+                    src="/twitter.svg"
+                    alt="twitter"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
               </Link>
               <Link
                 href="#contact"
                 aria-label="LinkedIn"
-                className="w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium"
+                className="group relative w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium overflow-hidden"
               >
-                <Image
-                  src="/linkedin.svg"
-                  alt="linkedin"
-                  width={50}
-                  height={50}
-                  className="size-5 object-cover"
-                />
+                <div className="transition-transform duration-300 ease-out group-hover:-translate-y-25">
+                  <Image
+                    src="/linkedin.svg"
+                    alt="linkedin"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">
+                  <Image
+                    src="/linkedin.svg"
+                    alt="linkedin"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
               </Link>
             </div>
           </div>
