@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { jobs } from "@/data/data";
+import Link from "next/link";
 
 export function Experience() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -90,13 +91,22 @@ export function Experience() {
             );
           })}
         </div>
-        <Button
-          href="mailto:hello@snilloc.dev"
-          rollText="Download My CV"
-          className="mt-12.5 mx-auto"
+        <Link
+          download
+          href="/Mohsen-cv.pdf"
+          className="group/button mt-12.5 mx-auto inline-flex shrink-0 items-center justify-center rounded-full bg-white px-4 py-2.5 text-[13px] font-bold text-black! transition-all hover:bg-[#e5e5e5]"
         >
-          Download My CV <ArrowRight size={18} />
-        </Button>
+          <span className="roll-text">
+            <span>Download My CV</span>
+            <span>Download My CV</span>
+          </span>
+          <span className="ml-2 flex size-5 shrink-0 items-center justify-center">
+            <ArrowRight
+              size={18}
+              className="size-5 shrink-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover/button:rotate-360"
+            />
+          </span>
+        </Link>
       </div>
     </section>
   );
