@@ -33,8 +33,16 @@ export function Testimonials() {
           {/* Row 1 - scrolls left */}
           <div
             className="relative"
-            onMouseEnter={() => swiper1Ref.current?.autoplay?.stop()}
-            onMouseLeave={() => swiper1Ref.current?.autoplay?.start()}
+            onMouseEnter={() => {
+              const s = swiper1Ref.current;
+              s?.autoplay?.stop();
+              if (s) s.wrapperEl.style.transition = "0s";
+            }}
+            onMouseLeave={() => {
+              const s = swiper1Ref.current;
+              if (s) s.wrapperEl.style.removeProperty("transition");
+              s?.autoplay?.start();
+            }}
           >
             <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-linear-to-r from-[#111] to-transparent" />
             <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-linear-to-l from-[#111] to-transparent" />
@@ -42,7 +50,7 @@ export function Testimonials() {
               modules={[Autoplay, FreeMode]}
               loop
               freeMode={{ enabled: true, momentum: false }}
-              speed={6000}
+              speed={12000}
               autoplay={{ delay: 0, disableOnInteraction: false }}
               slidesPerView="auto"
               spaceBetween={18}
@@ -81,8 +89,16 @@ export function Testimonials() {
           {/* Row 2 - scrolls right */}
           <div
             className="relative"
-            onMouseEnter={() => swiper2Ref.current?.autoplay?.stop()}
-            onMouseLeave={() => swiper2Ref.current?.autoplay?.start()}
+            onMouseEnter={() => {
+              const s = swiper2Ref.current;
+              s?.autoplay?.stop();
+              if (s) s.wrapperEl.style.transition = "0s";
+            }}
+            onMouseLeave={() => {
+              const s = swiper2Ref.current;
+              if (s) s.wrapperEl.style.removeProperty("transition");
+              s?.autoplay?.start();
+            }}
           >
             <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-linear-to-r from-[#111] to-transparent" />
             <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-linear-to-l from-[#111] to-transparent" />
@@ -90,7 +106,7 @@ export function Testimonials() {
               modules={[Autoplay, FreeMode]}
               loop
               freeMode={{ enabled: true, momentum: false }}
-              speed={6000}
+              speed={12000}
               autoplay={{
                 delay: 0,
                 disableOnInteraction: false,
