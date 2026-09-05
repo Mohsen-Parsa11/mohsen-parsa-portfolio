@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Button as ButtonPrimitive } from "@base-ui/react/button";
 import { cva, type VariantProps } from "class-variance-authority";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -37,7 +36,7 @@ const buttonVariants = cva(
 );
 
 interface ButtonProps
-  extends React.HTMLAttributes<HTMLButtonElement>,
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
   href?: string;
@@ -52,7 +51,9 @@ function Button({
   asChild = false,
   href,
   children,
+  type = "button",
   rollText,
+  ...props
 }: ButtonProps) {
   const classNames = cn(
     buttonVariants({ variant, size }),
@@ -149,12 +150,14 @@ const renderArrow = () => {
    */
   if (asChild) {
     return (
-      <ButtonPrimitive
+      <button
+        type={type}
         data-slot="button"
         className={classNames}
+        {...props}
       >
         {renderContent()}
-      </ButtonPrimitive>
+      </button>
     );
   }
 
@@ -173,12 +176,14 @@ const renderArrow = () => {
    * Normal button
    */
   return (
-    <ButtonPrimitive
+    <button
+      type={type}
       data-slot="button"
       className={classNames}
+      {...props}
     >
       {renderContent()}
-    </ButtonPrimitive>
+    </button>
   );
 }
 

@@ -1,26 +1,54 @@
-/* eslint-disable @next/next/no-location-assign-relative-destination */
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useToast } from "@/components/ui/toast";
 
+type FormData = {
+  name: string;
+  email: string;
+  message: string;
+};
 export function Contact() {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const mailtoLink = `mohsenp249@gmail.com?subject=Contact from ${
-      formData.name
-    }&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
-    )}`;
-    window.location.href = mailtoLink;
+  const onSubmit = async (data: FormData) => {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.message);
+    }
+
+    return result;
+  };
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    try {
+      await onSubmit(formData);
+      toast("Message sent successfully!", "success");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      toast(
+        error instanceof Error ? error.message : "Something went wrong.",
+        "error"
+      );
+    }
   };
 
   return (
@@ -88,9 +116,9 @@ export function Contact() {
               className="bg-[#151515] rounded-xl px-5 py-3.5 text-white text-[15px] font-semibold outline-none border border-[#282828] focus:border-[#555] transition-colors resize-none"
             />
             <Button
-              href="#contact"
+              type="submit"
               rollText="Send Message"
-              className="mt-1 mr-auto"
+              className="mt-1 mr-auto cursor-pointer"
             >
               Send Message <ArrowRight size={18} />
             </Button>

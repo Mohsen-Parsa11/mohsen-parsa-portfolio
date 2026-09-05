@@ -1,4 +1,5 @@
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { ToastProvider } from "@/components/ui/toast";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`min-h-full flex flex-col ${inter.className}`}>
-        <SmoothScroll>{children}</SmoothScroll>
+        <ToastProvider>
+          <SmoothScroll>{children}</SmoothScroll>
+        </ToastProvider>
       </body>
     </html>
   );
