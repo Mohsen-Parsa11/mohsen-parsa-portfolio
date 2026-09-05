@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { SectionHeading } from "./SectionHeading";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { jobs } from "@/data/data";
@@ -14,7 +13,7 @@ export function Experience() {
 
   return (
     <section id="experience" className="py-30 bg-[#171717]">
-      <div className="container flex flex-col items-center">
+      <div className="max-w-225 mx-auto flex flex-col items-center">
         <SectionHeading
           id="experience-heading"
           tag="Experience"

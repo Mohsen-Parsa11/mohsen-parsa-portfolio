@@ -38,7 +38,7 @@ export function Projects() {
                   src={project.image}
                   alt={`${project.title} project preview`}
                   loading="lazy"
-                  className="w-full h-75 object-cover rounded-xl brightness-80"
+                  className="w-full h-75 object-cover scale-105 rounded-xl brightness-80"
                 />
               </motion.div>
               <div className="p-7.5 bg-[#141414] rounded-xl mt-3">

@@ -3,7 +3,7 @@ export const projects = [
     title: "CloudDesk",
     text:
       "A modern dashboard interface designed to help teams manage tasks, track progress, and collaborate seamlessly in real time.",
-    image: "/hassle-free.jpg",
+    image: "/hewadwal.png",
   },
   {
     title: "Matcha Haven",
