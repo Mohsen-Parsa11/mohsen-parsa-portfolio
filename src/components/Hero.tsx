@@ -18,8 +18,8 @@ export function Hero() {
   const swiperRef = useRef<SwiperType>(null);
 
   return (
-    <section id="top">
-      <div className="min-h-auto lg:min-h-183 items-center container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 py-10 lg:py-0">
+    <section id="top" className="py-30 ">
+      <div className="items-center container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
         <div className="max-w-full lg:max-w-132.5">
           <motion.span
             className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-[#171717] text-[#9b9b9b] tracking-wider text-sm font-bold"
@@ -43,7 +43,7 @@ export function Hero() {
             Available for work
           </motion.span>
 
-          <h1 className="mt-6.5 mb-5 text-3xl sm:text-4xl md:text-5xl font-light overflow-hidden flex">
+          <h1 className="mt-6.5 mb-5 text-3xl sm:text-4xl md:text-5xl font-light flex">
             {"Frontend Engineer.".split("").map((char, i) => (
               <motion.span
                 key={i}
@@ -81,7 +81,7 @@ export function Hero() {
             <Button variant="outline" href="#projects" rollText="View projects">
               See my works
             </Button>
-            <Button href="mailto:hello@snilloc.dev" rollText="Let's talk">
+            <Button href="#contact" rollText="Let's talk">
               Contact Me <ArrowRight size={18} />
             </Button>
           </motion.div>
@@ -92,8 +92,8 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.0 }}
           >
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-gradient-to-r from-[#111] to-transparent" />
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-gradient-to-l from-[#111] to-transparent" />
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-linear-to-r from-[#111] to-transparent" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 lg:w-28 z-10 bg-linear-to-l from-[#111] to-transparent" />
             <Swiper
               modules={[Autoplay, FreeMode]}
               loop
@@ -118,7 +118,7 @@ export function Hero() {
               {duplicatedLogos.map((icon, i) => (
                 <SwiperSlide
                   key={`${icon.id}-${i}`}
-                  className="!w-auto"
+                  className="w-auto!"
                 >
                   <span className="grid place-items-center size-16 lg:size-20 shrink-0 rounded-xl bg-[#151515] text-[28px] font-extrabold">
                     <Image

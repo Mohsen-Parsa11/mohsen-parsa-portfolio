@@ -1,7 +1,8 @@
 "use client";
 
-import { iconColors, skills } from "@/data/data";
+import { logos } from "@/data/data";
 import { SectionHeading } from "./SectionHeading";
+import Image from "next/image";
 
 export function Skills() {
   return (
@@ -12,19 +13,19 @@ export function Skills() {
           experiences
         </SectionHeading>
         <div className="flex flex-wrap justify-center gap-2.5 max-w-197.5 mx-auto">
-          {skills.map((skill, i) => (
+          {logos.map((skill) => (
             <span
-              key={skill}
+              key={skill.id}
               className="flex items-center gap-2.5 px-5 py-3 border border-[#282828] rounded-full text-[16px] font-bold"
             >
-              <b
-                className={`grid place-items-center w-5 h-5 text-[9px] rounded-[5px] ${
-                  iconColors[i % 5]
-                }`}
-              >
-                {skill.slice(0, 2)}
-              </b>
-              {skill}
+              <Image
+                src={skill.src}
+                alt={skill.title}
+                width={200}
+                height={200}
+                className="size-7"
+              />
+              <p className="">{skill.title}</p>
             </span>
           ))}
         </div>

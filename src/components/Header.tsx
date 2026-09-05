@@ -9,12 +9,12 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-8 z-50 bg-[#111111]/80 backdrop-blur-md border border-[#232323] h-18 rounded-full container flex items-center justify-between">
+    <header className="sticky top-5 z-50 bg-[#111111]/80 backdrop-blur-md border border-[#232323] h-18 rounded-full container flex items-center justify-between mx-4">
       <Link
         href="#top"
         className="flex items-center gap-3 text-[18px] font-medium"
       >
-        <span className="w-9.5 h-9.5 rounded-full flex items-center justify-center bg-linear-to-br from-[#9d7042] to-[#2c2925] text-white font-bold text-[15px]">
+        <span className="w-9.5 h-9.5 rounded-full flex items-center justify-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[15px]">
           M
         </span>
         <span>Mohsen Parsa</span>

@@ -5,69 +5,140 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="border-t border-[#242424] py-10.5 pb-7.5">
+    <footer className="py-30">
       <div className="container">
         <div className="grid grid-cols-[1fr_auto] gap-8.75">
           <div>
             <Link className="flex items-center gap-3.5" href="#top">
-              <Image
-                src="/mohsen.jpg"
-                alt="mohsen"
-                width={400}
-                height={400}
-                className="rounded-full size-8"
-              />
+              <span className="w-9.5 h-9.5 rounded-full flex items-center justify-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[15px]">
+                M
+              </span>
               <span className="text-[18px] font-medium">Mohsen Parsa</span>
             </Link>
-            <p className="text-[#858585] text-[17px] font-semibold leading-[1.55] mt-5.5 whitespace-pre-line">
+            <p className="text-[#858585] text-[17px] font-semibold leading-[1.55] mt-5.5 whitespace-pre-line max-w-90">
               I build fast, polished, and user- friendly products that deliver
               real value
             </p>
             <div className="flex gap-2.5 mt-5.5">
               <Link
-                href="#contact"
+                href="https://github.com/Mohsen-Parsa11"
+                target="_blank"
                 aria-label="Github"
-                className="w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium"
+                className="group relative w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium overflow-hidden"
               >
-                GH
+                <div className="transition-transform duration-300 ease-out group-hover:-translate-y-25">
+                  <Image
+                    src="/github.svg"
+                    alt="github"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">
+                  <Image
+                    src="/github.svg"
+                    alt="github"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
               </Link>
               <Link
                 href="#contact"
                 aria-label="Twitter"
-                className="w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium"
+                className="group relative w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium overflow-hidden"
               >
-                TW
+                <div className="transition-transform duration-300 ease-out group-hover:-translate-y-25">
+                  <Image
+                    src="/twitter.svg"
+                    alt="twitter"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">
+                  <Image
+                    src="/twitter.svg"
+                    alt="twitter"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
               </Link>
               <Link
                 href="#contact"
                 aria-label="LinkedIn"
-                className="w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium"
+                className="group relative w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium overflow-hidden"
               >
-                in
+                <div className="transition-transform duration-300 ease-out group-hover:-translate-y-25">
+                  <Image
+                    src="/linkedin.svg"
+                    alt="linkedin"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-out translate-y-full group-hover:translate-y-0">
+                  <Image
+                    src="/linkedin.svg"
+                    alt="linkedin"
+                    width={50}
+                    height={50}
+                    className="size-5 object-cover"
+                  />
+                </div>
               </Link>
             </div>
           </div>
-          <nav className="flex flex-col gap-4.5 font-semibold">
-            <Link href="#skills" className="transition-colors hover:text-white">
-              Skills
+          <nav className="flex flex-col gap-4.5 items-end">
+            <Link
+              href="#skills"
+              className="group relative block h-6 overflow-hidden"
+            >
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                Skills
+              </span>
+              <span className="absolute left-0 top-full block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                Skills
+              </span>
             </Link>
             <Link
               href="#projects"
-              className="transition-colors hover:text-white"
+              className="group relative block h-6 overflow-hidden"
             >
-              Projects
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                Projects
+              </span>
+              <span className="absolute left-0 top-full block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                Projects
+              </span>
             </Link>
             <Link
               href="#experience"
-              className="transition-colors hover:text-white"
+              className="group relative block h-6 overflow-hidden"
             >
-              Experience
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                Experience
+              </span>
+              <span className="absolute left-0 top-full block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                Experience
+              </span>
             </Link>
             <Link
               href="#testimonials"
-              className="transition-colors hover:text-white"
+              className="group relative block h-6 overflow-hidden"
             >
-              Testimonials
+              <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                Testimonials
+              </span>
+              <span className="absolute left-0 top-full block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                Testimonials
+              </span>
             </Link>
           </nav>
         </div>
