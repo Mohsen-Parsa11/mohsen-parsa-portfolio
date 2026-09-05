@@ -3,7 +3,7 @@ export const projects = [
     title: "CloudDesk",
     text:
       "A modern dashboard interface designed to help teams manage tasks, track progress, and collaborate seamlessly in real time.",
-    image: "/hassle-free.jpg",
+    image: "/hewadwal.png",
   },
   {
     title: "Matcha Haven",
@@ -82,12 +82,25 @@ export const jobs = [
       "Optimized UI performance and reusable component structure",
     ],
   },
-  { role: "UI Engineer", company: "Meta", date: "2021 — 2022", bullets: [] },
+  {
+    role: "UI Engineer",
+    company: "Meta",
+    date: "2021 — 2022",
+    bullets: [
+      "Built responsive customer-facing interfaces for web products",
+      "Worked closely with product and design teams to improve usability",
+      "Optimized UI performance and reusable component structure",
+    ],
+  },
   {
     role: "Frontend Lead",
     company: "Google",
     date: "2020 — 2021",
-    bullets: [],
+    bullets: [
+      "Built responsive customer-facing interfaces for web products",
+      "Worked closely with product and design teams to improve usability",
+      "Optimized UI performance and reusable component structure",
+    ],
   },
 ];
 
