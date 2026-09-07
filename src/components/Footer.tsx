@@ -46,7 +46,8 @@ export function Footer() {
                 </div>
               </Link>
               <Link
-                href="#contact"
+                href="https://x.com/mohsenparsa21"
+                target="_blank"
                 aria-label="Twitter"
                 className="group relative w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium overflow-hidden"
               >
@@ -70,7 +71,8 @@ export function Footer() {
                 </div>
               </Link>
               <Link
-                href="#contact"
+                href="https://www.linkedin.com/in/mohsen-parsa/"
+                target="_blank"
                 aria-label="LinkedIn"
                 className="group relative w-9 h-9 rounded-full flex items-center justify-center bg-[#f5f5f5] text-[#111] text-[14px] font-medium overflow-hidden"
               >
