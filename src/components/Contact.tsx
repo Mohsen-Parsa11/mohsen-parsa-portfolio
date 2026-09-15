@@ -74,7 +74,7 @@ export function Contact() {
               ))}
             </h2>
             <motion.p
-              className="text-[#858585] text-[17px] font-semibold leading-[1.55]"
+              className="text-[#858585] text-sm md:text-[17px] font-semibold md:leading-[1.55]"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -93,7 +93,7 @@ export function Contact() {
                 setFormData({ ...formData, name: e.target.value })
               }
               required
-              className="bg-[#151515] rounded-xl px-5 py-3.5 text-white text-[15px] font-semibold outline-none border border-[#282828] focus:border-[#555] transition-colors"
+              className="bg-[#151515] rounded-xl px-5 py-3.5 text-white text-[12px] md:text-[15px] font-semibold outline-none border border-[#282828] focus:border-[#555] transition-colors"
             />
             <input
               type="email"
@@ -103,7 +103,7 @@ export function Contact() {
                 setFormData({ ...formData, email: e.target.value })
               }
               required
-              className="bg-[#151515] rounded-xl px-5 py-3.5 text-white text-[15px] font-semibold outline-none border border-[#282828] focus:border-[#555] transition-colors"
+              className="bg-[#151515] rounded-xl px-5 py-3.5 text-white text-[12px] md:text-[15px] font-semibold outline-none border border-[#282828] focus:border-[#555] transition-colors"
             />
             <textarea
               placeholder="Your Message"
@@ -113,7 +113,7 @@ export function Contact() {
               }
               required
               rows={5}
-              className="bg-[#151515] rounded-xl px-5 py-3.5 text-white text-[15px] font-semibold outline-none border border-[#282828] focus:border-[#555] transition-colors resize-none"
+              className="bg-[#151515] rounded-xl px-5 py-3.5 text-white text-[12px] md:text-[15px] font-semibold outline-none border border-[#282828] focus:border-[#555] transition-colors resize-none"
             />
             <Button
               type="submit"

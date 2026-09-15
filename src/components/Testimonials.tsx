@@ -65,11 +65,11 @@ export function Testimonials() {
                   <article className="bg-[#151515] w-100 lg:w-120 rounded-[15px] p-6.5 min-h-60 shrink-0"> 
                     <div className="flex items-center justify-between"> 
                       <div className="flex items-center gap-3"> 
-                        <span className="size-12 rounded-full grid place-items-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[14px]"> 
+                        <span className="size-10 md:size-12 rounded-full grid place-items-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[14px]"> 
                           {name[0]} 
                         </span> 
                         <div> 
-                          <strong>{name}</strong> 
+                          <strong className="text-sm md:text-base">{name}</strong> 
                           <small className="block text-[#777] mt-0.75 font-semibold text-sm"> 
                             {role} 
                           </small> 
@@ -77,7 +77,7 @@ export function Testimonials() {
                       </div> 
                       <QuoteIcon className="size-10" /> 
                     </div> 
-                    <p className="text-[#858585] text-[16px] font-semibold leading-[1.55] mt-8.5"> 
+                    <p className="text-[#858585] text-sm md:text-[16px] font-semibold md:leading-[1.55] mt-8.5"> 
                       {text} 
                     </p> 
                   </article> 
@@ -125,11 +125,11 @@ export function Testimonials() {
                   <article className="bg-[#151515] w-100 lg:w-120 rounded-[15px] p-6.5 min-h-60 shrink-0"> 
                     <div className="flex items-center justify-between"> 
                       <div className="flex items-center gap-3"> 
-                        <span className="size-12 rounded-full grid place-items-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[14px]"> 
+                        <span className="size-10 md:size-12 rounded-full grid place-items-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[14px]"> 
                           {name[0]} 
                         </span> 
                         <div> 
-                          <strong>{name}</strong> 
+                          <strong className="text-sm md:text-base">{name}</strong> 
                           <small className="block text-[#777] mt-0.75 font-semibold text-sm"> 
                             {role} 
                           </small> 
@@ -137,7 +137,7 @@ export function Testimonials() {
                       </div> 
                       <QuoteIcon className="size-10" /> 
                     </div> 
-                    <p className="text-[#858585] text-[16px] font-semibold leading-[1.55] mt-8.5"> 
+                    <p className="text-[#858585] text-sm md:text-[16px] font-semibold md:leading-[1.55] mt-8.5"> 
                       {text} 
                     </p> 
                   </article> 

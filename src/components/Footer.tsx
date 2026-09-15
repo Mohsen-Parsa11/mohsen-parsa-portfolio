@@ -10,12 +10,14 @@ export function Footer() {
         <div className="grid grid-cols-[1fr_auto] gap-8.75">
           <div>
             <Link className="flex items-center gap-3.5" href="#top">
-              <span className="w-9.5 h-9.5 rounded-full flex items-center justify-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[15px]">
+              <span className="size-9.5 shrink-0 rounded-full flex items-center justify-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[15px]">
                 M
               </span>
-              <span className="text-[18px] font-medium">Mohsen Parsa</span>
+              <span className="text-[16px] md:text-[18px] font-medium">
+                Mohsen Parsa
+              </span>
             </Link>
-            <p className="text-[#858585] text-[17px] font-semibold leading-[1.55] mt-5.5 whitespace-pre-line max-w-90">
+            <p className="text-[#858585] text-sm md:text-[17px] font-semibold leading-[1.55] mt-5.5 whitespace-pre-line max-w-90">
               I build fast, polished, and user- friendly products that deliver
               real value
             </p>
@@ -100,7 +102,7 @@ export function Footer() {
           <nav className="flex flex-col gap-4.5 items-end">
             <Link
               href="#skills"
-              className="group relative block h-6 overflow-hidden"
+              className="group text-sm md:text-base relative block h-6 overflow-hidden"
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
                 Skills
@@ -111,7 +113,7 @@ export function Footer() {
             </Link>
             <Link
               href="#projects"
-              className="group relative block h-6 overflow-hidden"
+              className="group text-sm md:text-base relative block h-6 overflow-hidden"
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
                 Projects
@@ -122,7 +124,7 @@ export function Footer() {
             </Link>
             <Link
               href="#experience"
-              className="group relative block h-6 overflow-hidden"
+              className="group text-sm md:text-base relative block h-6 overflow-hidden"
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
                 Experience
@@ -133,7 +135,7 @@ export function Footer() {
             </Link>
             <Link
               href="#testimonials"
-              className="group relative block h-6 overflow-hidden"
+              className="group text-sm md:text-base relative block h-6 overflow-hidden"
             >
               <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
                 Testimonials
@@ -144,7 +146,7 @@ export function Footer() {
             </Link>
           </nav>
         </div>
-        <div className="border-t border-[#242424] pt-6.25 text-center text-[#777] text-[16px] mt-8 grid-col-span-2">
+        <div className="border-t border-[#242424] pt-6.25 text-center text-[#777] text-sm md:text-[16px] mt-8 grid-col-span-2">
           © 2026 — Copyright. All Rights reserved
         </div>
       </div>
