@@ -18,7 +18,7 @@ export function Testimonials() {
   const swiper2Ref = useRef<SwiperType>(null); 
  
   return ( 
-    <section id="testimonials" className="py-30 overflow-hidden"> 
+    <section id="testimonials" className="py-16 md:py-20 lg:py-30 overflow-hidden"> 
       <div className="container"> 
         <SectionHeading 
           id="testimonials-heading" 

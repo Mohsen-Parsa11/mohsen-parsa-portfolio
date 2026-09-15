@@ -22,7 +22,7 @@ export function SectionHeading({
       >
         {tag}
       </motion.span>
-      <h2 className="font-light tracking-tighter mt-4.5 mb-3 text-[32px]">
+      <h2 className="font-light tracking-tighter mt-4.5 mb-3 text-2xl md:text-[32px]">
         {title.split("").map((char, i) => (
           <motion.span
             key={i}
@@ -40,7 +40,7 @@ export function SectionHeading({
         ))}
       </h2>
       <motion.p
-        className="text-[#858585] text-[17px] font-semibold leading-[1.55]"
+        className="text-[#858585] text-sm md:text-[17px] font-semibold md:leading-[1.55]"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

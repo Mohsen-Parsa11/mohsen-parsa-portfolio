@@ -52,11 +52,11 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-30 bg-[#171717]">
+    <section id="contact" className="py-16 md:py-20 lg:py-30 bg-[#171717]">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 items-start">
           <div>
-            <h2 className="font-light tracking-tighter mt-4.5 mb-3 text-[32px]">
+            <h2 className="font-light tracking-tighter mt-4.5 mb-3 text-2xl md:text-[32px]">
               {"Let's Build Something Great".split("").map((char, i) => (
                 <motion.span
                   key={i}

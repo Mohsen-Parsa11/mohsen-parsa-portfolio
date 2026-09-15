@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="py-30">
+    <footer className="py-16 md:py-20 lg:py-30">
       <div className="container">
         <div className="grid grid-cols-[1fr_auto] gap-8.75">
           <div>

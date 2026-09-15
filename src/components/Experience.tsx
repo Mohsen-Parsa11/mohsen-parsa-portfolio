@@ -12,7 +12,7 @@ export function Experience() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="experience" className="py-30 bg-[#171717]">
+    <section id="experience" className="py-16 md:py-20 lg:py-30 bg-[#171717]">
       <div className="max-w-225 mx-auto flex flex-col items-center">
         <SectionHeading
           id="experience-heading"
@@ -35,12 +35,14 @@ export function Experience() {
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="w-full cursor-pointer p-[23px_24px_0] grid grid-cols-[1fr_auto] gap-4.5 items-center text-left"
+                  className="w-full cursor-pointer p-[23px_24px_0] grid grid-cols-[1fr_auto] gap-4.5 pb-2 items-center text-left"
                 >
-                  <span className="text-[20px] text-white">
+                  <span className="text-[16px] md:text-[20px] text-white">
                     {job.role} — {job.company}
                   </span>
-                  <b className="text-[#777] text-[16px]">{job.date}</b>
+                  <b className="text-[#777] text-[12px] md:text-[16px]">
+                    {job.date}
+                  </b>
                 </button>
                 <AnimatePresence initial={false}>
                   {isOpen && (
@@ -61,7 +63,7 @@ export function Experience() {
                       className="overflow-hidden px-5"
                     >
                       {job.bullets.length > 0 && (
-                        <ul className="text-[#999] pl-5.75 px-5 pt-6 pb-2 font-semibold space-y-2.5 list-disc">
+                        <ul className="text-[#999] pl-5.75 text-sm md:text-base space-y-2.5 list-disc">
                           {job.bullets.map((b) => (
                             <li key={b}>{b}</li>
                           ))}
