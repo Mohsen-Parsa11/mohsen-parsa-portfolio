@@ -41,7 +41,7 @@ export function Projects() {
                   className="w-full h-75 object-cover scale-105 rounded-xl brightness-80"
                 />
               </motion.div>
-              <div className="p-7.5 bg-[#141414] rounded-xl mt-3">
+              <div className="p-4 md:p-7.5 bg-[#141414] rounded-xl mt-3">
                 <h3 className="font-light tracking-tighter text-xl md:text-[27px]">
                   {project.title}
                 </h3>

@@ -25,7 +25,7 @@ export function Skills() {
                 height={200}
                 className="size-7"
               />
-              <p className="">{skill.title}</p>
+              <p className="text-sm md:text-base">{skill.title}</p>
             </span>
           ))}
         </div>
