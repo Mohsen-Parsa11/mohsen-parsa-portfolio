@@ -18,11 +18,11 @@ export function Hero() {
   const swiperRef = useRef<SwiperType>(null);
 
   return (
-    <section id="top" className="py-30 ">
+    <section id="top" className="py-16 md:py-20 lg:py-30">
       <div className="items-center container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
         <div className="max-w-full lg:max-w-132.5">
           <motion.span
-            className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-[#171717] text-[#9b9b9b] tracking-wider text-sm font-bold"
+            className="inline-flex text-xs items-center gap-2.5 px-4 py-2.5 rounded-full bg-[#171717] text-[#9b9b9b] tracking-wider md:text-sm font-bold"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -43,7 +43,7 @@ export function Hero() {
             Available for work
           </motion.span>
 
-          <h1 className="mt-6.5 mb-5 text-3xl sm:text-4xl md:text-5xl font-light flex">
+          <h1 className="mt-6.5 mb-5 text-3xl tracking-tighter sm:text-4xl md:text-5xl font-light flex">
             {"Frontend Engineer.".split("").map((char, i) => (
               <motion.span
                 key={i}
@@ -61,7 +61,7 @@ export function Hero() {
           </h1>
 
           <motion.p
-            className="text-[#858585] text-[14px] sm:text-[16px] font-semibold leading-[1.55]"
+            className="text-[#858585] text-[14px] sm:text-[16px] font-semibold md:leading-[1.55]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
