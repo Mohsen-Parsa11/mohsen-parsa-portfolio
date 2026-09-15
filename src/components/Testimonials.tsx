@@ -18,7 +18,7 @@ export function Testimonials() {
   const swiper2Ref = useRef<SwiperType>(null); 
  
   return ( 
-    <section id="testimonials" className="py-30 overflow-hidden"> 
+    <section id="testimonials" className="py-16 md:py-20 lg:py-30 overflow-hidden"> 
       <div className="container"> 
         <SectionHeading 
           id="testimonials-heading" 
@@ -29,7 +29,33 @@ export function Testimonials() {
           process and results firsthand 
         </SectionHeading> 
  
-        <div className="flex flex-col gap-5"> 
+        {/* Mobile: flex-col layout */} 
+        <div className="flex flex-col gap-5 md:hidden"> 
+          {testimonials.map(([name, role, text], i) => ( 
+            <article key={`mobile-${name}-${i}`} className="bg-[#151515] w-full rounded-[15px] p-6.5 min-h-60 shrink-0"> 
+              <div className="flex items-center justify-between"> 
+                <div className="flex items-center gap-3"> 
+                  <span className="size-10 shrink-0 rounded-full grid place-items-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[14px]"> 
+                    {name[0]} 
+                  </span> 
+                  <div> 
+                    <strong className="text-sm">{name}</strong> 
+                    <small className="block text-[#777] mt-0.75 font-semibold text-sm"> 
+                      {role} 
+                    </small> 
+                  </div> 
+                </div> 
+                <QuoteIcon className="size-10" /> 
+              </div> 
+              <p className="text-[#858585] text-sm font-semibold leading-[1.55] mt-8.5"> 
+                {text} 
+              </p> 
+            </article> 
+          ))} 
+        </div> 
+ 
+        {/* Desktop: scrolling rows */} 
+        <div className="hidden md:flex flex-col gap-5"> 
           {/* Row 1 - scrolls left */} 
           <div 
             className="relative" 
@@ -69,7 +95,7 @@ export function Testimonials() {
                           {name[0]} 
                         </span> 
                         <div> 
-                          <strong>{name}</strong> 
+                          <strong className="text-base">{name}</strong> 
                           <small className="block text-[#777] mt-0.75 font-semibold text-sm"> 
                             {role} 
                           </small> 
@@ -129,7 +155,7 @@ export function Testimonials() {
                           {name[0]} 
                         </span> 
                         <div> 
-                          <strong>{name}</strong> 
+                          <strong className="text-base">{name}</strong> 
                           <small className="block text-[#777] mt-0.75 font-semibold text-sm"> 
                             {role} 
                           </small> 

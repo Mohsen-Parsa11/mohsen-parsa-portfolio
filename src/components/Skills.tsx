@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function Skills() {
   return (
-    <section className="bg-[#171717] py-30">
+    <section className="bg-[#171717] py-16 md:py-20 lg:py-30">
       <div className="container">
         <SectionHeading id="skills" tag="Tech stack" title="Tools I Build With">
           A curated set of technologies I rely on to build modern web
@@ -25,7 +25,7 @@ export function Skills() {
                 height={200}
                 className="size-7"
               />
-              <p className="">{skill.title}</p>
+              <p className="text-sm md:text-base">{skill.title}</p>
             </span>
           ))}
         </div>

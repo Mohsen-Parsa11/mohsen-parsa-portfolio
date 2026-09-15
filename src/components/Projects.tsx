@@ -9,7 +9,7 @@ import { projects } from "@/data/data";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-30">
+    <section id="projects" className="py-16 md:py-20 lg:py-30">
       <div className="container">
         <SectionHeading
           id="projects-heading"
@@ -41,23 +41,29 @@ export function Projects() {
                   className="w-full h-75 object-cover scale-105 rounded-xl brightness-80"
                 />
               </motion.div>
-              <div className="p-7.5 bg-[#141414] rounded-xl mt-3">
-                <h3 className="font-light tracking-tighter text-[27px]">
+              <div className="p-4 md:p-7.5 bg-[#141414] rounded-xl mt-3">
+                <h3 className="font-light tracking-tighter text-xl md:text-[27px]">
                   {project.title}
                 </h3>
-                <p className="text-[#858585] text-[16px] font-semibold leading-[1.55] min-h-18.5 mt-2.5">
+                <p className="text-[#858585] text-[14px] md:text-[16px] font-semibold md:leading-[1.55] min-h-18.5 mt-2.5">
                   {project.text}
                 </p>
-                <div className="flex items-center gap-4 mt-6">
+                <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
                   <Button
                     variant="outline"
                     href="#contact"
                     size="default"
                     rollText="View code"
+                    className="w-full md:w-auto"
                   >
                     Source Code
                   </Button>
-                  <Button href="#contact" size="default" rollText="Open site">
+                  <Button
+                    href="#contact"
+                    size="default"
+                    rollText="Open site"
+                    className="w-full md:w-auto"
+                  >
                     Live Website <ArrowRight size={16} />
                   </Button>
                 </div>

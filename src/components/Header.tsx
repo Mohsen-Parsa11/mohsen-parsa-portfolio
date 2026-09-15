@@ -20,7 +20,7 @@ export function Header() {
         <span>Mohsen Parsa</span>
       </Link>
 
-      <nav className="hidden md:flex items-center gap-7 text-[16px] font-medium">
+      <nav className="hidden md:flex items-center gap-7 text-sm md:text-[16px] font-medium">
         <Link
           href="#skills"
           className="group relative block h-6 overflow-hidden"
@@ -89,35 +89,35 @@ export function Header() {
           <Link
             href="#skills"
             onClick={() => setMenuOpen(false)}
-            className="text-[16px] font-medium hover:text-[#9d7042] transition-colors"
+            className="text-sm md:text-[16px] font-medium hover:text-[#9d7042] transition-colors"
           >
             Skills
           </Link>
           <Link
             href="#projects"
             onClick={() => setMenuOpen(false)}
-            className="text-[16px] font-medium hover:text-[#9d7042] transition-colors"
+            className="text-sm md:text-[16px] font-medium hover:text-[#9d7042] transition-colors"
           >
             Projects
           </Link>
           <Link
             href="#experience"
             onClick={() => setMenuOpen(false)}
-            className="text-[16px] font-medium hover:text-[#9d7042] transition-colors"
+            className="text-sm md:text-[16px] font-medium hover:text-[#9d7042] transition-colors"
           >
             Experience
           </Link>
           <Link
             href="#testimonials"
             onClick={() => setMenuOpen(false)}
-            className="text-[16px] font-medium hover:text-[#9d7042] transition-colors"
+            className="text-sm md:text-[16px] font-medium hover:text-[#9d7042] transition-colors"
           >
             Testimonials
           </Link>
           <Link
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-[#f5f5f5] text-[#111111]! text-[13px] font-bold hover:bg-[#e5e5e5] transition-colors"
+            className="flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-[#f5f5f5] text-[#111111]! text-sm md:text-[13px] font-bold hover:bg-[#e5e5e5] transition-colors"
           >
             Contact Me
             <ArrowRight className="size-5" />
