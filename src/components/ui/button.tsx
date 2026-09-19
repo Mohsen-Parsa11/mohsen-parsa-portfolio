@@ -166,7 +166,7 @@ const renderArrow = () => {
    */
   if (href) {
     return (
-      <Link href={href} className={classNames}>
+      <Link target="_blank" rel="noopener noreferrer" href={href} className={classNames}>
         {renderContent()}
       </Link>
     );

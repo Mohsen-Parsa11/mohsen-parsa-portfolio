@@ -1,27 +1,35 @@
 export const projects = [
   {
-    title: "CloudDesk",
+    title: "Solar Panel System",
     text:
-      "A modern dashboard interface designed to help teams manage tasks, track progress, and collaborate seamlessly in real time.",
-    image: "/hewadwal.png",
+      "A comprehensive website for a solar panel company, designed to showcase products, provide information on solar energy solutions, and facilitate customer inquiries.",
+    image: "/hewad.webp",
+    liveLink: "https://www.hewadwalsolarltd.com/en",
+    githubLink: "https://github.com/Mohsen-Parsa11/hewadwal-solar-panel-system",
   },
   {
-    title: "Matcha Haven",
+    title: "Change Makers",
     text:
-      "A clean, calming website for a matcha brand, designed to showcase products, tell the brand story, and create a smooth shopping experience.",
+      "A dynamic platform for a non-profit organization, highlighting their initiatives, events, and impact stories, while enabling users to get involved and support their cause.",
     image: "/change-makers.jpg",
+    liveLink: "https://www.cmworld.org/",
+    githubLink: "https://github.com/Mohsen-Parsa11/change-makers",
   },
   {
-    title: "Finova",
+    title: "Hassle Free Legal",
     text:
-      "A sleek fintech platform designed to simplify payments, track expenses, and give users clear insights into their financial activity.",
+      "A user-friendly website for a legal services provider, offering easy access to legal resources, consultation booking, and information on various legal services.",
     image: "/hassleFree.png",
+    liveLink: "https://hasslefree.legal/",
+    githubLink: "https://github.com/Mohsen-Parsa11/hassle-free-legal",
   },
   {
-    title: "Eventra",
+    title: "Task Hive System",
     text:
-      "A modern event discovery platform that helps users find, explore, buy tickets, and stay updated on events happening around them.",
-    image: "/change-makers.jpg",
+      "A task management system designed to streamline project workflows, allowing teams to create, assign, and track tasks efficiently, with features for collaboration and progress monitoring.",
+    image: "/taskHive.webp",
+    liveLink: "https://www.taskhive.com.au/",
+    githubLink: "https://github.com/Mohsen-Parsa11/Task-Hive-System",
   },
 ];
 

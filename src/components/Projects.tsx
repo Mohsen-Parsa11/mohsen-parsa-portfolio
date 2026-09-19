@@ -51,7 +51,7 @@ export function Projects() {
                 <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
                   <Button
                     variant="outline"
-                    href="#contact"
+                    href={project.githubLink}
                     size="default"
                     rollText="View code"
                     className="w-full md:w-auto"
@@ -59,7 +59,7 @@ export function Projects() {
                     Source Code
                   </Button>
                   <Button
-                    href="#contact"
+                    href={project.liveLink}
                     size="default"
                     rollText="Open site"
                     className="w-full md:w-auto"
