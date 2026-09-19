@@ -42,6 +42,7 @@ interface ButtonProps
   href?: string;
   children: React.ReactNode;
   rollText?: string;
+  target?: "_blank" | "_self";
 }
 
 function Button({
@@ -53,6 +54,7 @@ function Button({
   children,
   type = "button",
   rollText,
+  target,
   ...props
 }: ButtonProps) {
   const classNames = cn(
@@ -166,7 +168,11 @@ const renderArrow = () => {
    */
   if (href) {
     return (
-      <Link target="_blank" rel="noopener noreferrer" href={href} className={classNames}>
+      <Link
+        href={href}
+        className={classNames}
+        {...(target ? { target, rel: target === "_blank" ? "noopener noreferrer" : undefined } : {})}
+      >
         {renderContent()}
       </Link>
     );

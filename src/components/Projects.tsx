@@ -22,7 +22,7 @@ export function Projects() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-12.5">
           {projects.map((project) => (
             <motion.article
-              className="bg-[#181818] border border-[#1f1f1f] rounded-xl p-2 overflow-hidden"
+              className="bg-[#181818] border border-[#1f1f1f] rounded-xl p-2 overflow-hidden flex flex-col"
               key={project.title}
             >
               <motion.div
@@ -41,19 +41,20 @@ export function Projects() {
                   className="w-full h-75 object-cover scale-105 rounded-xl brightness-80"
                 />
               </motion.div>
-              <div className="p-4 md:p-7.5 bg-[#141414] rounded-xl mt-3">
+              <div className="p-4 md:p-7.5 bg-[#141414] rounded-xl mt-3 flex-1 flex flex-col">
                 <h3 className="font-light tracking-tighter text-xl md:text-[27px]">
                   {project.title}
                 </h3>
-                <p className="text-[#858585] text-[14px] md:text-[16px] font-semibold md:leading-[1.55] min-h-18.5 mt-2.5">
+                <p className="text-[#858585] text-[14px] md:text-[16px] font-semibold md:leading-[1.55] mt-2.5">
                   {project.text}
                 </p>
-                <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
+                <div className="flex flex-col md:flex-row items-center gap-4 mt-auto pt-6">
                   <Button
                     variant="outline"
                     href={project.githubLink}
                     size="default"
                     rollText="View code"
+                    target="_blank"
                     className="w-full md:w-auto"
                   >
                     Source Code
@@ -62,6 +63,7 @@ export function Projects() {
                     href={project.liveLink}
                     size="default"
                     rollText="Open site"
+                    target="_blank"
                     className="w-full md:w-auto"
                   >
                     Live Website <ArrowRight size={16} />
