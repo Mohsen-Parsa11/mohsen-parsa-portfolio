@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/free-mode"; 
 import { testimonials } from "@/data/data"; 
 import QuoteIcon from "./Icons"; 
+import Image from "next/image";
  
 const row1 = [...testimonials, ...testimonials, ...testimonials]; 
 const row2 = [...testimonials, ...testimonials, ...testimonials].reverse(); 
@@ -31,16 +32,19 @@ export function Testimonials() {
  
         {/* Mobile: flex-col layout */} 
         <div className="flex flex-col gap-5 md:hidden"> 
-          {testimonials.map(([name, role, text], i) => ( 
+          {testimonials.map(({name, role, text, profile}, i) => ( 
             <article key={`mobile-${name}-${i}`} className="bg-[#151515] w-full rounded-[15px] p-6.5 min-h-60 shrink-0"> 
               <div className="flex items-center justify-between"> 
                 <div className="flex items-center gap-3"> 
-                  <span className="size-10 shrink-0 rounded-full grid place-items-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[14px]"> 
-                    {name[0]} 
-                  </span> 
+                  <Image
+                    src={profile}
+                    alt={name}
+                    width={500}
+                    height={500}
+                    className="rounded-full size-10 object-cover" />
                   <div> 
                     <strong className="text-sm">{name}</strong> 
-                    <small className="block text-[#777] mt-0.75 font-semibold text-sm"> 
+                    <small className="block text-[#777] mt-0.75 font-bold text-sm"> 
                       {role} 
                     </small> 
                   </div> 
@@ -86,17 +90,22 @@ export function Testimonials() {
                 swiper.wrapperEl.style.transitionTimingFunction = "linear"; 
               }} 
             > 
-              {row1.map(([name, role, text], i) => ( 
+              {row1.map(({name, role, text, profile}, i) => ( 
                 <SwiperSlide key={`r1-${name}-${i}`} className="w-auto!"> 
                   <article className="bg-[#151515] w-100 lg:w-120 rounded-[15px] p-6.5 min-h-60 shrink-0"> 
                     <div className="flex items-center justify-between"> 
                       <div className="flex items-center gap-3"> 
-                        <span className="size-12 rounded-full grid place-items-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[14px]"> 
-                          {name[0]} 
-                        </span> 
+                        <Image
+                          src={profile}
+                          alt={name}
+                          width={500}
+                          height={500}
+                          className="rounded-full size-10 object-cover"
+                          loading="lazy"                       
+                        /> 
                         <div> 
                           <strong className="text-base">{name}</strong> 
-                          <small className="block text-[#777] mt-0.75 font-semibold text-sm"> 
+                          <small className="block text-[#777] mt-0.75 font-bold text-sm"> 
                             {role} 
                           </small> 
                         </div> 
@@ -146,17 +155,21 @@ export function Testimonials() {
                 swiper.wrapperEl.style.transitionTimingFunction = "linear"; 
               }} 
             > 
-              {row2.map(([name, role, text], i) => ( 
+              {row2.map(({name, role, text, profile}, i) => ( 
                 <SwiperSlide key={`r2-${name}-${i}`} className="w-auto!"> 
                   <article className="bg-[#151515] w-100 lg:w-120 rounded-[15px] p-6.5 min-h-60 shrink-0"> 
                     <div className="flex items-center justify-between"> 
                       <div className="flex items-center gap-3"> 
-                        <span className="size-12 rounded-full grid place-items-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[14px]"> 
-                          {name[0]} 
-                        </span> 
+                        <Image
+                          src={profile}
+                          alt={name}
+                          width={500}
+                          height={500}
+                          className="rounded-full size-10 object-cover"
+                        /> 
                         <div> 
                           <strong className="text-base">{name}</strong> 
-                          <small className="block text-[#777] mt-0.75 font-semibold text-sm"> 
+                          <small className="block text-[#777] mt-0.75 font-bold text-sm"> 
                             {role} 
                           </small> 
                         </div> 

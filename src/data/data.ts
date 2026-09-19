@@ -1,27 +1,35 @@
 export const projects = [
   {
-    title: "CloudDesk",
+    title: "Solar Panel System",
     text:
-      "A modern dashboard interface designed to help teams manage tasks, track progress, and collaborate seamlessly in real time.",
-    image: "/hewadwal.png",
+      "A comprehensive website for a solar panel company, designed to showcase products, provide information on solar energy solutions, and facilitate customer inquiries.",
+    image: "/hewad.webp",
+    liveLink: "https://www.hewadwalsolarltd.com/en",
+    githubLink: "https://github.com/Mohsen-Parsa11/hewadwal-solar-panel-system",
   },
   {
-    title: "Matcha Haven",
+    title: "Change Makers",
     text:
-      "A clean, calming website for a matcha brand, designed to showcase products, tell the brand story, and create a smooth shopping experience.",
+      "A dynamic platform for a non-profit organization, highlighting their initiatives, events, and impact stories, while enabling users to get involved and support their cause.",
     image: "/change-makers.jpg",
+    liveLink: "https://www.cmworld.org/",
+    githubLink: "https://github.com/Mohsen-Parsa11/change-makers",
   },
   {
-    title: "Finova",
+    title: "Hassle Free Legal",
     text:
-      "A sleek fintech platform designed to simplify payments, track expenses, and give users clear insights into their financial activity.",
+      "A user-friendly website for a legal services provider, offering easy access to legal resources, consultation booking, and information on various legal services.",
     image: "/hassleFree.png",
+    liveLink: "https://hasslefree.legal/",
+    githubLink: "https://github.com/Mohsen-Parsa11/hassle-free-legal",
   },
   {
-    title: "Eventra",
+    title: "Task Hive System",
     text:
-      "A modern event discovery platform that helps users find, explore, buy tickets, and stay updated on events happening around them.",
-    image: "/change-makers.jpg",
+      "A task management system designed to streamline project workflows, allowing teams to create, assign, and track tasks efficiently, with features for collaboration and progress monitoring.",
+    image: "/taskHive.webp",
+    liveLink: "https://www.taskhive.com.au/",
+    githubLink: "https://github.com/Mohsen-Parsa11/Task-Hive-System",
   },
 ];
 
@@ -34,72 +42,84 @@ export const iconColors = [
 ];
 
 export const testimonials = [
-  [
-    "Emily Watson",
-    "Frontend Developer, Shopify",
-    "Snilloc writes some of the cleanest code I've seen. He's thoughtful, consistent, and always focused on performance and user experience.",
-  ],
-  [
-    "Daniel Carter",
-    "Product Designer, Stripe",
-    "Working with Snilloc was seamless. His attention to detail and ability to translate design into smooth, functional interfaces really stood out.",
-  ],
-  [
-    "Michael Brown",
-    "UI/UX Designer, Airbnb",
-    "He has a strong eye for detail and a real ability to bring ideas to life on the web. Collaborating with him is always easy.",
-  ],
-  [
-    "James Wilson",
-    "Product Manager, Atlassian",
-    "He understands product thinking, not just code. That makes a big difference when building features that actually matter to users.",
-  ],
-  [
-    "Olivia Martinez",
-    "Creative Developer, Webflow",
-    "His work is clean, modern, and polished. He consistently delivers interfaces that feel intuitive and well-crafted.",
-  ],
+  {
+    name: "Sayeed Mahdi Mousavi",
+    role: "Software Engineer",
+    text:
+      "Mohsen is a reliable developer who pays attention to both code quality and the user experience. He is always willing to collaborate and find practical solutions.",
+    profile: "/users/syedmahdi.jpg",
+  },
+
+  {
+    name: "Mahdi Mohammadi",
+    role: "Frontend Developer",
+    text:
+      "Working with Mohsen has been a great experience. He has a strong understanding of frontend development and consistently focuses on building clean and responsive interfaces.",
+    profile: "/users/mahdi.jpg",
+  },
+
+  {
+    name: "Hamid Hussaini",
+    role: "Mobile Flutter Developer",
+    text:
+      "Mohsen is easy to work with and communicates well throughout the development process. He pays attention to details and takes responsibility for the work he delivers.",
+    profile: "/users/hamid.jpg",
+  },
+
+  {
+    name: "Qambar Gholamy",
+    role: "Backend Developer",
+    text:
+      "I've worked with Mohsen on web projects and found him to be a dedicated frontend developer. He understands API integration well and works smoothly with backend teams.",
+    profile: "/users/qambar.jpg",
+  },
+
+  {
+    name: "Ali Sadaqat",
+    role: "Full Stack Developer",
+    text:
+      "Mohsen has a good eye for clean UI and user experience. He approaches frontend problems thoughtfully and is always looking for ways to improve the final product.",
+    profile: "/users/sadaqat.jpg",
+  },
+
+  {
+    name: "Ali Sharifi",
+    role: "Frontend Developer",
+    text:
+      "Mohsen is a detail-oriented developer who cares about writing maintainable code and delivering polished interfaces. He is also a good teammate to work with.",
+    profile: "/users/sharifi.jpg",
+  },
 ];
 
 export const jobs = [
   {
-    role: "Frontend Engineer",
-    company: "Paystack",
-    date: "2023 — Present",
-    bullets: [
-      "Built and maintained responsive user interfaces using modern JavaScript frameworks",
-      "Collaborated with designers to deliver clean, user-focused experiences",
-      "Optimized performance and improved page load times across key products",
-    ],
-  },
-  {
-    role: "Frontend Engineer",
-    company: "Hubtel",
-    date: "2022 — 2023",
-    bullets: [
-      "Built responsive customer-facing interfaces for web products",
-      "Worked closely with product and design teams to improve usability",
-      "Optimized UI performance and reusable component structure",
-    ],
-  },
-  {
-    role: "UI Engineer",
-    company: "Meta",
-    date: "2021 — 2022",
-    bullets: [
-      "Built responsive customer-facing interfaces for web products",
-      "Worked closely with product and design teams to improve usability",
-      "Optimized UI performance and reusable component structure",
-    ],
-  },
-  {
     role: "Frontend Lead",
-    company: "Google",
-    date: "2020 — 2021",
+    company: "MarsCoders",
+    date: "2025 — Present",
     bullets: [
-      "Built responsive customer-facing interfaces for web products",
-      "Worked closely with product and design teams to improve usability",
-      "Optimized UI performance and reusable component structure",
+      "Led frontend development for production web applications using React, Next.js, and TypeScript",
+      "Built reusable UI components and responsive interfaces across multiple products",
+      "Collaborated with designers and backend developers to deliver scalable and user-focused features",
+    ],
+  },
+  {
+    role: "Frontend Engineer",
+    company: "MarsCoders",
+    date: "2024 — 2025",
+    bullets: [
+      "Developed responsive web interfaces using React, Next.js, and modern JavaScript",
+      "Integrated REST and GraphQL APIs to build dynamic application features",
+      "Improved UI performance, component reusability, and overall user experience",
+    ],
+  },
+  {
+    role: "Independent Frontend Developer",
+    company: "Freelance",
+    date: "2025 — Present",
+    bullets: [
+      "Developed responsive web interfaces for independent projects using React and Next.js",
+      "Integrated APIs, authentication, forms, and reusable frontend components",
+      "Focused on clean UI, responsive design, performance, and maintainable code",
     ],
   },
 ];
