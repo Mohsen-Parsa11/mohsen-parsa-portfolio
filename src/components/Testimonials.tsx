@@ -79,7 +79,6 @@ export function Testimonials() {
             <Swiper 
               modules={[Autoplay, FreeMode]} 
               loop 
-              freeMode={{ enabled: true, momentum: false }} 
               speed={12000} 
               autoplay={{ delay: 0, disableOnInteraction: false }} 
               slidesPerView="auto" 
