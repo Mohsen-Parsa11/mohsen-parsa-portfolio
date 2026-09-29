@@ -97,6 +97,10 @@ export function Hero() {
             <Swiper
               modules={[Autoplay, FreeMode]}
               loop
+              freeMode={{
+                enabled: true,
+                momentum: false,
+              }}
               speed={2500}
               autoplay={{
                 delay: 0,
