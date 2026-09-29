@@ -147,7 +147,7 @@ export function Hero() {
             height={1000}
             src="/mohsen.webp"
             alt="Portrait of Mohsen Parsa"
-            className="w-full h-full object-contain object-center saturate-150 z-30"
+            className="w-full h-full object-contain object-center saturate-120 z-30"
           />
         <div className="absolute lg:right-16 lg:bottom-20 size-100 rounded-full bg-[radial-gradient(circle_at_center,rgba(163,163,166,0.55)_0%,rgba(163,163,166,0.28)_40%,rgba(163,163,166,0.08)_65%,transparent_78%)] blur-2xl z-0" />
         </motion.div>
