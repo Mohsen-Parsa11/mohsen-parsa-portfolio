@@ -115,7 +115,7 @@ export const jobs = [
   {
     role: "Independent Frontend Developer",
     company: "Freelance",
-    date: "2025 — Present",
+    date: "working since 2025",
     bullets: [
       "Developed responsive web interfaces for independent projects using React and Next.js",
       "Integrated APIs, authentication, forms, and reusable frontend components",
