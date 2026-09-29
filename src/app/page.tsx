@@ -20,7 +20,7 @@ export function generateMetadata(): Metadata {
       url: "https://mohsen-parsa-portfolio.vercel.app",
       images: [
         {
-          url: "/mohsen.png",
+          url: "/favicon/icon.webp",
           width: 400,
           height: 400,
           alt: "Mohsen Parsa — Frontend Engineer",

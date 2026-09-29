@@ -9,10 +9,14 @@ export function Footer() {
       <div className="container">
         <div className="grid grid-cols-[1fr_auto] gap-8.75">
           <div>
-            <Link className="flex items-center gap-3.5" href="#top">
-              <span className="size-9.5 shrink-0 rounded-full flex items-center justify-center bg-linear-to-bl from-[#9d7042] to-[#2c2925] text-white font-bold text-[15px]">
-                M
-              </span>
+            <Link className="flex items-center gap-1" href="#top">
+              <Image
+                src="/favicon/icon.webp"
+                alt="icon"
+                width={50}
+                height={50}
+                className="object-contain size-14"
+              />
               <span className="text-[16px] md:text-[18px] font-medium">
                 Mohsen Parsa
               </span>

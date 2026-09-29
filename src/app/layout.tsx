@@ -72,8 +72,8 @@ export const metadata: Metadata = {
     creator: "@Mohsen_Parsa11",
   },
   icons: {
-    icon: "/favicon/favicon-32x32.png",
-    apple: "/favicon/apple-touch-icon.png",
+    icon: "/favicon/icon.webp",
+    apple: "/favicon/icon.webp",
   },
   robots: {
     index: true,
