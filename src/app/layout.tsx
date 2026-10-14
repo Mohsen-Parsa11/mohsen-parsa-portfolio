@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Mohsen Parsa — Frontend Engineer",
     description:
       "Mohsen Parsa is a frontend engineer specializing in React, Next.js, and TypeScript. I build fast, accessible, and polished web experiences.",
-    images: ["/mohsen.png"],
+    images: ["/mohsen.webp"],
     creator: "@Mohsen_Parsa11",
   },
   icons: {
